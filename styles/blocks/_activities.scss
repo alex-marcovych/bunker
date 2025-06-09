@@ -38,11 +38,11 @@
 
   &__card {
     &-first {
-      background-image: url('../../images/act1.jpg');
+      background-image: url('/bunker/images/act1.jpg');
     }
 
     &-second {
-      background-image: url("../../images/act2.jpeg");
+      background-image: url("/bunker/images/act2.jpeg");
     }
 
     display: flex;

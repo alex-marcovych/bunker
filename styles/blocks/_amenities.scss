@@ -50,42 +50,38 @@
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
 
     &-first{
-      background-image: url('../../images/amen1.jpeg');
-
-      @include mobile {
-        background-position: 0 -120px;
-      }
+      background-image: url('/bunker/images/amen1.jpeg');
     }
 
     &-second{
-      background-image: url('../../images/amen2.jpeg');
+      background-image: url('/bunker/images/amen2.jpeg');
 
       @include mobile {
-        background-position: 0 -200px;
+        background-position: 0 -100px;
       }
     }
 
     &-third{
-      background-image: url('../../images/amen3.jpeg');
+      background-image: url('/bunker/images/amen3.jpeg');
 
       @include mobile {
-        background-position: 0 -180px;
+        background-position: 0 -130px;
       }
     }
 
     &-fourth{
-      background-image: url('../../images/amen4.jpg');
+      background-image: url('/bunker/images/amen4.jpg');
 
       @include mobile {
-        background-position: 0 -90px;
+        background-position: 0 -10px;
       }
     }
 
     &-fifth{
-      background-image: url('../../images/amen5.jpg');
+      background-image: url('/bunker/images/amen5.jpg');
 
       @include mobile {
-        background-position: 0 -75px;
+        background-position: 0 -10px;
       }
     }
   }

@@ -157,6 +157,21 @@ svg * {
   margin-inline: auto;
   padding-inline: 80px;
 }
+@media (width <= 90.06125rem) {
+  .container {
+    padding-inline: 48px;
+  }
+}
+@media (width <= 63.99875rem) {
+  .container {
+    padding-inline: 32px;
+  }
+}
+@media (width <= 47.99875rem) {
+  .container {
+    padding-inline: 24px;
+  }
+}
 
 html {
   font-family: "Nunito Sans", sans-serif;
@@ -553,10 +568,10 @@ html {
   color: #ffffff;
 }
 .activities__card-first {
-  background-image: url("../../images/act1.jpg");
+  background-image: url("/bunker/images/act1.jpg");
 }
 .activities__card-second {
-  background-image: url("../../images/act2.jpeg");
+  background-image: url("/bunker/images/act2.jpeg");
 }
 .activities__card-title {
   font-weight: bold;
@@ -670,43 +685,38 @@ html {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
 }
 .amenities__item-first {
-  background-image: url("../../images/amen1.jpeg");
-}
-@media (width <= 47.99875rem) {
-  .amenities__item-first {
-    background-position: 0 -120px;
-  }
+  background-image: url("/bunker/images/amen1.jpeg");
 }
 .amenities__item-second {
-  background-image: url("../../images/amen2.jpeg");
+  background-image: url("/bunker/images/amen2.jpeg");
 }
 @media (width <= 47.99875rem) {
   .amenities__item-second {
-    background-position: 0 -200px;
+    background-position: 0 -100px;
   }
 }
 .amenities__item-third {
-  background-image: url("../../images/amen3.jpeg");
+  background-image: url("/bunker/images/amen3.jpeg");
 }
 @media (width <= 47.99875rem) {
   .amenities__item-third {
-    background-position: 0 -180px;
+    background-position: 0 -130px;
   }
 }
 .amenities__item-fourth {
-  background-image: url("../../images/amen4.jpg");
+  background-image: url("/bunker/images/amen4.jpg");
 }
 @media (width <= 47.99875rem) {
   .amenities__item-fourth {
-    background-position: 0 -90px;
+    background-position: 0 -10px;
   }
 }
 .amenities__item-fifth {
-  background-image: url("../../images/amen5.jpg");
+  background-image: url("/bunker/images/amen5.jpg");
 }
 @media (width <= 47.99875rem) {
   .amenities__item-fifth {
-    background-position: 0 -75px;
+    background-position: 0 -10px;
   }
 }
 
