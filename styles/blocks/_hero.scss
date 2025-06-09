@@ -12,4 +12,8 @@
   flex-grow: 1;
   justify-content: end;
   align-items: center;
+
+  @include tablet {
+    background-position: -400px 0;
+  }
 }

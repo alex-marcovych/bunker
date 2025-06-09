@@ -281,6 +281,11 @@ html {
   justify-content: end;
   align-items: center;
 }
+@media (width <= 63.99875rem) {
+  .hero {
+    background-position: -400px 0;
+  }
+}
 
 .booking-form {
   backdrop-filter: blur(12px);
@@ -370,6 +375,11 @@ html {
   gap: 8px;
   font-size: 14px;
 }
+@media (width <= 47.99875rem) {
+  .about__icons {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 .about__icons-item {
   display: flex;
   align-items: center;
@@ -425,12 +435,17 @@ html {
 .apartments__list {
   padding-top: 40px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
   gap: 32px;
 }
-@media (width <= 47.99875rem) {
+@media (width > 63.99875rem) {
+  .apartments__list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (width <= 63.99875rem) {
   .apartments__list {
     grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
   }
 }
 .apartments__card {
@@ -442,6 +457,7 @@ html {
   text-align: start;
   overflow: hidden;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  max-width: 400px;
 }
 .apartments__card-body {
   padding: 20px;

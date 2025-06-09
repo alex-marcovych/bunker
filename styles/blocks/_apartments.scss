@@ -18,11 +18,15 @@
   &__list {
     padding-top: 40px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
     gap: 32px;
 
-    @include mobile {
+    @include tablet-above {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include tablet {
       grid-template-columns: repeat(1, 1fr);
+      justify-items: center
     }
   }
 
@@ -35,6 +39,7 @@
     text-align: start;
     overflow: hidden;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    max-width: 400px;
 
     &-body {
       padding: 20px;
