@@ -1,0 +1,60 @@
+@use "../helpers" as *;
+
+.reviews {
+  text-align: center;
+  padding-block: 64px;
+
+  &__title {
+    font-size: 36px;
+    color: #30452F;
+  }
+
+  &__description {
+    color: #4B5563;
+    font-size: 18px;
+  }
+
+  &__list {
+    padding-top: 32px;
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(3, 1fr);
+
+    @include mobile {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  &__item {
+    background-color: #F7F9FA;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding:24px;
+    justify-content: start;
+
+    &-stars {
+      display: flex;
+      gap: 2px;
+      align-self: center;
+    }
+
+    &-icon{
+      border-radius: 100%;
+    }
+
+    &-author {
+      display: flex;
+      gap:12px;
+      width: 100%;
+      text-align: start;
+    }
+  }
+
+  &__link {
+    color: #30452F;
+    padding-top: 16px;
+    text-decoration: none;
+  }
+}

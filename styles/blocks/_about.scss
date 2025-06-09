@@ -1,0 +1,81 @@
+@use "../helpers" as *;
+
+.about {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 24px;
+  padding-block: 64px;
+
+  @include mobile {
+    display: grid;
+
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    &-title {
+      font-size: 36px;
+      font-weight: 800;
+      color: #30452F;
+    }
+
+    &-info {
+      font-size: 16px;
+      color: #4B5563;
+    }
+  }
+
+  &__icons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    font-size: 14px;
+
+    &-item {
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      gap: 8px;
+    }
+  }
+
+  &__poster {
+    position: relative;
+    &-photo {
+      border-radius: 32px;
+    }
+
+    &-card {
+      position: absolute;
+      bottom: -30px;
+      left: -15px;
+      background-color: #ffffff;
+      padding: 16px;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    &-rating {
+      display: flex;
+      gap: 16px;
+      text-align: center;
+
+      & p {
+        font-weight: bold;
+        font-size: 20px;
+      }
+    }
+
+    &-stars {
+      display: flex;
+      gap: 2px;
+      align-self: center;
+    }
+  }
+}

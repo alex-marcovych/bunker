@@ -1,0 +1,13 @@
+@use 'normalize';
+@use 'variables';
+@use 'utils';
+
+@use 'blocks/header';
+@use 'blocks/hero';
+@use 'blocks/booking-form';
+@use 'blocks/about';
+@use 'blocks/apartments';
+@use 'blocks/activities';
+@use 'blocks/reviews';
+@use 'blocks/amenities';
+@use 'blocks/footer';

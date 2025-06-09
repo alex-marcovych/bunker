@@ -1,0 +1,92 @@
+@use "../helpers" as *;
+
+.amenities {
+  text-align: center;
+  padding-block: 64px;
+
+  &__title {
+    font-size: 36px;
+    color: #30452F;
+  }
+
+  &__description {
+    color: #4B5563;
+    font-size: 18px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+    padding-top: 20px;
+
+    @include mobile {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  &__glass {
+    background: #30452F;
+    backdrop-filter: blur(10px);
+    color: #ffffff;
+    padding: 4px 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    width: fit-content;
+  }
+
+  &__item {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    padding: 16px;
+    justify-content: end;
+    flex-direction: column;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    border-radius: 32px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+
+    &-first{
+      background-image: url('../../images/amen1.jpeg');
+
+      @include mobile {
+        background-position: 0 -120px;
+      }
+    }
+
+    &-second{
+      background-image: url('../../images/amen2.jpeg');
+
+      @include mobile {
+        background-position: 0 -200px;
+      }
+    }
+
+    &-third{
+      background-image: url('../../images/amen3.jpeg');
+
+      @include mobile {
+        background-position: 0 -180px;
+      }
+    }
+
+    &-fourth{
+      background-image: url('../../images/amen4.jpg');
+
+      @include mobile {
+        background-position: 0 -90px;
+      }
+    }
+
+    &-fifth{
+      background-image: url('../../images/amen5.jpg');
+
+      @include mobile {
+        background-position: 0 -75px;
+      }
+    }
+  }
+}

@@ -1,0 +1,76 @@
+@use "../helpers" as *;
+
+.activities {
+  background-color: #F7F9FA;
+  text-align: center;
+  padding-block: 64px;
+
+  &__title {
+    font-size: 36px;
+    color: #30452F;
+  }
+
+  &__description {
+    color: #4B5563;
+    font-size: 18px;
+  }
+
+  &__list {
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+
+    @include mobile {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  &__glass {
+    border-radius: 8px;
+    backdrop-filter: blur(16px);
+    background-color: rgba(255, 255, 255, 0.15);
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  &__card {
+    &-first {
+      background-image: url('../../images/act1.jpg');
+    }
+
+    &-second {
+      background-image: url("../../images/act2.jpeg");
+    }
+
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: end;
+    height: 300px;
+    width: 100%;
+    border-radius: 16px;
+    text-align: start;
+    padding-inline: 16px;
+    padding-bottom: 16px;
+    color: #ffffff;
+
+    &-title {
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    &-description {
+      font-size: 14px;
+    }
+
+    &-geo {
+      display: flex;
+      gap: 6px;
+      font-weight: bold;
+    }
+  }
+}

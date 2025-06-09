@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="ua">
+<head>
+  <meta charset="UTF-8">
+  <meta
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+      name="viewport">
+  <meta content="ie=edge" http-equiv="X-UA-Compatible">
+  <title>Bunker</title>
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+  <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet">
+  <link href="./styles/main.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="header container">
+  <div class="header__logo">
+    <a href="#">
+      <img alt="header logo" class="header__logo" height="56" src="./icons/logo.svg" width="274">
+    </a>
+  </div>
+  
+  <nav class="header__menu">
+    <ul class="header__menu-list">
+      <li class="header__menu-item">
+        <a class="header__menu-link is-active" href="#about">Про нас</a>
+      </li>
+      <li class="header__menu-item">
+        <a class="header__menu-link is-active" href="#apartments">Апартаменти</a>
+      </li>
+      <li class="header__menu-item">
+        <a class="header__menu-link" href="#amenities">Дозвілля</a>
+      </li>
+      <li class="header__menu-item">
+        <a class="header__menu-link" href="#reviews">Відгуки</a>
+      </li>
+      <li class="header__menu-item">
+        <a class="header__menu-active " href="#">Забронювати</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<main class="main">
+  <section class="hero container">
+    <form action="https://formspree.io/f/mjkrklog" class="booking-form" method="POST">
+      <h2 class="booking-form__title">Забронювати апартаменти</h2>
+      
+      <label class="booking-form__label">
+        Імʼя та прізвище:
+        <input class="booking-form__input" name="name" required type="text">
+      </label>
+      
+      <label class="booking-form__label">
+        Бажана дата заселення:
+        <input class="booking-form__input" name="date" required type="date">
+      </label>
+      
+      <label class="booking-form__label">
+        Номер телефону:
+        <input
+            class="booking-form__input"
+            name="phone-number"
+            placeholder="+38 (099) 111-11-11"
+            required
+            title="Введіть номер у форматі: +38 (097) 123-45-67"
+            type="tel"
+        >
+      </label>
+      
+      <label class="booking-form__label">
+        Кількість кімнат:
+        <input class="booking-form__input" min="1" name="rooms" required type="number">
+      </label>
+      <button class="booking-form__button" type="submit">Надіслати заявку</button>
+    </form>
+  </section>
+  
+  <section class="about container" id="about">
+    <div class="about__description">
+      <h1 class="about__description-title">
+        Гірський відпочинок у самому <br>серці Карпат
+      </h1>
+      <div>
+        <p class="about__description-info">Розташований у величних Карпатських горах, наш гостьовий
+          будинок пропонує ідеальне
+          поєднання сільського шарму та сучасного комфорту. Оточений незайманими лісами та
+          захоплюючими краєвидами, він є ідеальним місцем для тих, хто шукає спокою та єднання з
+          природою.<br><br>
+          Кожна деталь нашого гостьового будинку була ретельно продумана, щоб створити теплу,
+          затишну атмосферу, поважаючи при цьому природне середовище, яке нас оточує.
+        </p>
+      </div>
+      <ul class="about__icons">
+        <li class="about__icons-item">
+          <img alt="mountains" height="24" src="./icons/mountain.svg" width="24">
+          <p>Захоплюючі види</p>
+        </li>
+        
+        <li class="about__icons-item">
+          <img alt="free wi-fi" height="24" src="./icons/wifi.svg" width="24">
+          <p>Безкоштовний інтернет</p>
+        </li>
+        
+        <li class="about__icons-item">
+          <img alt="eco friendly" height="24" src="./icons/eco.svg" width="24">
+          <p>Екологічно</p>
+        </li>
+        
+        <li class="about__icons-item">
+          <img alt="traditional food" height="24" src="./icons/food.svg" width="24">
+          <p>Місцева кухня</p>
+        </li>
+      </ul>
+    </div>
+    <div class="about__poster">
+      <img alt="" class="about__poster-photo" src="./images/about.jpg">
+      <div class="about__poster-card">
+        <div class="about__poster-rating">
+          <div class="about__poster-stars">
+            <img alt="star" src="./icons/star-yellow.svg">
+            <img alt="star" src="./icons/star-yellow.svg">
+            <img alt="star" src="./icons/star-yellow.svg">
+            <img alt="star" src="./icons/star-yellow.svg">
+            <img alt="star" src="./icons/star-yellow.svg">
+          </div>
+          <p>4.9/5</p>
+        </div>
+        <p>На основі 200+ відгуків <br>гостей</p>
+      </div>
+    </div>
+  </section>
+  
+  <section class="apartments container" id="apartments">
+    <h2 class="apartments__title">Наші затишні номери</h2>
+    <p class="apartments__description">Кожна кімната унікально спроектована, щоб забезпечити комфорт
+      і водночас
+      <br>з'єднати вас з
+      природною красою, яка оточує наш гостьовий будинок.</p>
+    <ul class="apartments__list">
+      <li class="apartments__card">
+        <img alt="" class="apartments__card-photo" src="./images/1.png">
+        <div class="apartments__card-body">
+          <h3 class="apartments__card-title">Люкс з видом на гори</h3>
+          <p class="apartments__card-description">Просторий люкс з панорамним видом на гори,
+            двоспальним ліжком розміру «king-size» та окремим балконом.</p>
+          <div class="apartments__card-info">
+            <div class="apartments__card-unit">King Bed</div>
+            <div class="apartments__card-unit">40m²</div>
+            <div class="apartments__card-unit">Balcony</div>
+            <div class="apartments__card-unit">Fireplace</div>
+          </div>
+          <div class="apartments__card-footer">
+            <div class="apartments__card-price">
+              <p class="apartments__card-1">₴2000</p>
+              <p class="apartments__card-2">/ніч</p>
+            </div>
+            <a class="apartments__card-button" href="#">Забронювати</a>
+          </div>
+        </div>
+      </li>
+      <li class="apartments__card">
+        <img alt="" class="apartments__card-photo" src="./images/1.png">
+        <div class="apartments__card-body">
+          <h3 class="apartments__card-title">Люкс з видом на гори</h3>
+          <p class="apartments__card-description">Просторий люкс з панорамним видом на гори,
+            двоспальним ліжком розміру «king-size» та окремим балконом.</p>
+          <div class="apartments__card-info">
+            <div class="apartments__card-unit">King Bed</div>
+            <div class="apartments__card-unit">40m²</div>
+            <div class="apartments__card-unit">Balcony</div>
+            <div class="apartments__card-unit">Fireplace</div>
+          </div>
+          <div class="apartments__card-footer">
+            <div class="apartments__card-price">
+              <p class="apartments__card-1">₴2000</p>
+              <p class="apartments__card-2">/ніч</p>
+            </div>
+            <a class="apartments__card-button" href="#">Забронювати</a>
+          </div>
+        </div>
+      </li>
+      <li class="apartments__card">
+        <img alt="" class="apartments__card-photo" src="./images/1.png">
+        <div class="apartments__card-body">
+          <h3 class="apartments__card-title">Люкс з видом на гори</h3>
+          <p class="apartments__card-description">Просторий люкс з панорамним видом на гори,
+            двоспальним ліжком розміру «king-size» та окремим балконом.</p>
+          <div class="apartments__card-info">
+            <div class="apartments__card-unit">King Bed</div>
+            <div class="apartments__card-unit">40m²</div>
+            <div class="apartments__card-unit">Balcony</div>
+            <div class="apartments__card-unit">Fireplace</div>
+          </div>
+          <div class="apartments__card-footer">
+            <div class="apartments__card-price">
+              <p class="apartments__card-1">₴2000</p>
+              <p class="apartments__card-2">/ніч</p>
+            </div>
+            <a class="apartments__card-button" href="#">Забронювати</a>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </section>
+  
+  <section class="amenities container" id="amenities">
+    <h2 class="amenities__title">Наші зручності </h2>
+    <p class="amenities__description">Все, що вам потрібно для спокійного та приємного відпочинку:
+      від продуманих дрібниць до функціональних рішень</p>
+    <ul class="amenities__list">
+      <li class="amenities__item amenities__item-first">
+        <h4 class="amenities__glass">Басейн</h4>
+      </li>
+      
+      <li class="amenities__item amenities__item-second">
+        <h4 class="amenities__glass">Чан</h4>
+      </li>
+      
+      <li class="amenities__item amenities__item-third">
+        <h4 class="amenities__glass">Дитячий майданчик</h4>
+      </li>
+      
+      <li class="amenities__item amenities__item-fourth">
+        <h4 class="amenities__glass">Зона барбекю</h4>
+      </li>
+      
+      <li class="amenities__item amenities__item-fifth">
+        <h4 class="amenities__glass">Соляна кімната</h4>
+      </li>
+    </ul>
+  </section>
+  
+  <section class="activities container">
+    <h2 class="activities__title">Гірські враження</h2>
+    <p class="activities__description">Відкрийте для себе мальовничі маршрути, затишні куточки
+      природи та неймовірні краєвиди,<br> що починаються за кілька кроків від нашого порогу.</p>
+    <ul class="activities__list">
+      <li class="activities__item">
+        <div class="activities__card activities__card-first">
+          <div class="activities__glass">
+            <h4 class="activities__card-title">Водоспад Шипіт</h4>
+            <p class="activities__card-description">Відкрийте для себе приховані каскади та
+              кришталево
+              чисті басейни вздовж мережі водоспадних стежок - від легких прогулянок до складних
+              походів.</p>
+            <div class="activities__card-geo">
+              <img alt="geo" src="./icons/geo.svg">
+              <p>3км</p>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="activities__item">
+        <div class="activities__card activities__card-second">
+          <div class="activities__glass">
+            <h4 class="activities__card-title">Озеро Синевир</h4>
+            <p class="activities__card-description">Озеро Синевир є найбільшим і найглибшим
+              високогірним озером України та відомою туристичною атракцією однойменного
+              національного
+              парку.</p>
+            <div class="activities__card-geo">
+              <img alt="geo" src="./icons/geo.svg">
+              <p>5км</p>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="activities__item">
+        <div class="activities__card activities__card-first">
+          <div class="activities__glass">
+            <h4 class="activities__card-title">Водоспад Шипіт</h4>
+            <p class="activities__card-description">Відкрийте для себе приховані каскади та
+              кришталево
+              чисті басейни вздовж мережі водоспадних стежок - від легких прогулянок до складних
+              походів.</p>
+            <div class="activities__card-geo">
+              <img alt="geo" src="./icons/geo.svg">
+              <p>3км</p>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </section>
+  
+  <section class="reviews container" id="reviews">
+    <h2 class="reviews__title">Відгуки гостів</h2>
+    <p class="reviews__description">Не вірте нам на слово. Ось що говорять наші гості про своє
+      перебування.</p>
+    <ul class="reviews__list">
+      <li class="reviews__item">
+        <div class="reviews__item-stars">
+          <img alt="star" src="./icons/star-yellow.svg">
+          <img alt="star" src="./icons/star-yellow.svg">
+          <img alt="star" src="./icons/star-yellow.svg">
+          <img alt="star" src="./icons/star-yellow.svg">
+          <img alt="star" src="./icons/star-yellow.svg">
+        </div>
+        <p class="reviews__item-review">«Справжня перлина в Карпатах! Краєвиди захоплюють дух,
+          номери затишні та красиво оформлені. Персонал зробив все можливе, щоб зробити наше
+          перебування особливим. Ми обов'язково повернемося!»</p>
+        <div class="reviews__item-author">
+          <img alt="фото" class="reviews__item-icon" src="./images/avatar-3.jpg" height="48"  width="48">
+          <div>
+            <div style="font-weight: bold">Марк К.</div>
+            <div>Львів, Україна</div>
+          </div>
+        </div>
+      </li>
+      <li class="reviews__item">
+        <div class="reviews__item-stars">
+          <img alt="star" src="./icons/star-yellow.svg">
+          <img alt="star" src="./icons/star-yellow.svg">
+          <img alt="star" src="./icons/star-yellow.svg">
+          <img alt="star" src="./icons/star-yellow.svg">
+          <img alt="star" src="./icons/star-yellow.svg">
+        </div>
+        <p class="reviews__item-review">«Справжня перлина в Карпатах! Краєвиди захоплюють дух,
+          номери затишні та красиво оформлені. Персонал зробив все можливе, щоб зробити наше
+          перебування особливим. Ми обов'язково повернемося!»</p>
+        <div class="reviews__item-author">
+          <img alt="фото" class="reviews__item-icon" height="48" src="./images/avatar-7.jpg" width="48">
+          <div>
+            <div style="font-weight: bold">Дарина О.</div>
+            <div>Київ, Україна</div>
+          </div>
+        </div>
+      </li>
+      <li class="reviews__item">
+        <div class="reviews__item-stars">
+          <img alt="star" src="./icons/star-yellow.svg">
+          <img alt="star" src="./icons/star-yellow.svg">
+          <img alt="star" src="./icons/star-yellow.svg">
+          <img alt="star" src="./icons/star-yellow.svg">
+          <img alt="star" src="./icons/star-yellow.svg">
+        </div>
+        <p class="reviews__item-review">«Справжня перлина в Карпатах! Краєвиди захоплюють дух,
+          номери затишні та красиво оформлені. Персонал зробив все можливе, щоб зробити наше
+          перебування особливим. Ми обов'язково повернемося!»</p>
+        <div class="reviews__item-author">
+          <img alt="фото" class="reviews__item-icon" height="48" src="./images/avatar-1.jpg" width="48">
+          <div>
+            <div style="font-weight: bold">Олена М.</div>
+            <div>Чернівці, Україна</div>
+          </div>
+        </div>
+      </li>
+    </ul>
+    
+    <a class="reviews__link" href="https://surl.li/jrwxst">Більше відгуків →</a>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer__container">
+    <a class="footer__logo" href="/"><img src="./icons/logo.svg" alt="лого"></a>
+    
+    <nav aria-label="Навігація футера" class="footer__nav">
+      <ul class="footer__list">
+        <li><a class="footer__link" href="#about">Про нас</a></li>
+        <li><a class="footer__link" href="#apartments">Апартаменти</a></li>
+        <li><a class="footer__link" href="#amenities">Дозвілля</a></li>
+        <li><a class="footer__link" href="#reviews">Відгуки</a></li>
+        <li><a class="footer__link" href="#">Забронювати</a></li>
+      </ul>
+    </nav>
+    
+    <address class="footer__contact">
+      <p class="footer__address">27а, Soimy, Zakarpattia Oblast, 90033</p>
+      <a class="footer__phone" href="tel:+380985659055">+38 (098) 565-90-55</a>
+      <a class="footer__email" href="mailto:info@example.com">info@example.com</a>
+    </address>
+    
+    <div class="footer__bottom">
+      <p class="footer__copyright">© 2025 Bunker. Усі права захищено.</p>
+      <ul class="footer__social">
+        <li><a aria-label="Facebook" class="footer__social-link"
+               href="https://www.facebook.com/sadyba.bunker"><img
+            alt="" src="./icons/facebook.svg"></a></li>
+        <li><a aria-label="Instagram" class="footer__social-link"
+               href="https://www.instagram.com/sadyba_bunker"><img
+            alt="" src="./icons/instagram.svg"></a></li>
+        <li><a aria-label="Booking" class="footer__social-link"
+               href="https://www.booking.com/hotel/ua/bunker.uk.html?activeTab=main#map_closed"><img
+            alt="" src="./icons/booking.svg"></a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

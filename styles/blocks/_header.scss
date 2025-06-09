@@ -1,0 +1,84 @@
+@use "../helpers" as *;
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 64px;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  flex-grow: 1;
+
+  animation-name: scrolling-header;
+  animation-fill-mode: both;
+  animation-timeline: scroll();
+  animation-range: rem(100) rem(200);
+
+  @keyframes scrolling-header {
+    to {
+      backdrop-filter: blur(12px);
+      background-color: rgba(255, 255, 255, 0.15);
+    }
+  }
+
+  &__logo {
+    height: 64px;
+    width: 124px;
+    min-width: 124px;
+
+    @include mobile {
+
+    }
+  }
+
+  &__menu {
+    @include mobile {
+      @include hide;
+    }
+
+    &-list {
+      display: flex;
+      align-items: center;
+      column-gap: rem(24);
+
+      @include laptop {
+        column-gap: rem(16);
+      }
+    }
+
+    &-link {
+      text-decoration: none;
+      color: var(--color-green);
+      transition-duration: 0.3s;
+      font-weight: 700;
+
+      @include hover {
+        padding: rem(6) rem(12);
+        background-color: #2D4C36;
+        border-radius: rem(24);
+        color: #F3F5F4;
+      }
+    }
+
+    &-active {
+      transition-duration: 0.3s;
+      text-decoration: none;
+      color: #F3F5F4;
+      padding: rem(6) rem(12);
+      background-color: #2D4C36;
+      border-radius: rem(36);
+      font-weight: 700;
+      border: 2px solid #2D4C36;
+
+      @include hover {
+        background-color: transparent;
+        border: 2px solid #2D4C36;
+        color: #2D4C36;
+      }
+    }
+  }
+}
