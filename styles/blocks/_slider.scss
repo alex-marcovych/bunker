@@ -1,0 +1,45 @@
+@use "../helpers" as *;
+
+.slider {
+  position: relative;
+  overflow: hidden;
+  height: 300px;
+}
+
+.slider__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  transition: transform 0.4s ease;
+}
+
+.slider__item {
+  list-style: none;
+  min-width: 100%;
+}
+
+.apartments__card-photo {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Кнопки керування */
+.control_prev,
+.control_next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;                    /* щоб не перекривався зображенням */
+  font-size: 24px;
+  line-height: 1;
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  padding: 6px 10px;
+  text-decoration: none;
+  cursor: pointer;
+  user-select: none;
+}
+
+.control_prev { left: 10px; }
+.control_next { right: 10px; }

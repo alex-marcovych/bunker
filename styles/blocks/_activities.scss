@@ -27,6 +27,8 @@
   }
 
   &__glass {
+    text-decoration: none;
+    color: white;
     border-radius: 8px;
     backdrop-filter: blur(16px);
     background-color: rgba(255, 255, 255, 0.15);
@@ -34,6 +36,7 @@
     display: flex;
     flex-direction: column;
     gap: 4px;
+    cursor: pointer;
   }
 
   &__card {
@@ -43,6 +46,22 @@
 
     &-second {
       background-image: url("/bunker/images/act2.jpeg");
+    }
+
+    &-third {
+      background-image: url("/bunker/images/act3.jpg");
+    }
+
+    &-fourth {
+      background-image: url("/bunker/images/act4.webp");
+    }
+
+    &-fifth {
+      background-image: url("/bunker/images/act5.jpg");
+    }
+
+    &-sixth {
+      background-image: url("/bunker/images/act6.jpg");
     }
 
     display: flex;

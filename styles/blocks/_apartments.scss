@@ -19,6 +19,7 @@
     padding-top: 40px;
     display: grid;
     gap: 32px;
+    justify-items: center;
 
     @include tablet-above {
       grid-template-columns: repeat(3, 1fr);
@@ -26,7 +27,17 @@
 
     @include tablet {
       grid-template-columns: repeat(1, 1fr);
-      justify-items: center
+      justify-items: center;
+    }
+  }
+
+  &__list_2{
+    padding-top: 32px;
+    display: flex;
+    justify-content: space-evenly;
+
+    @include tablet {
+      flex-direction: column;
     }
   }
 
@@ -62,13 +73,16 @@
       font-size: 24px;
     }
 
-    &-info{
+    &-info {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 8px;
     }
-    
+
     &-unit {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       background-color: #EEF2F5;
       border-radius: 16px;
       text-align: center;

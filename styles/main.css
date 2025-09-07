@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *,
 ::before,
 ::after {
@@ -436,6 +437,7 @@ html {
   padding-top: 40px;
   display: grid;
   gap: 32px;
+  justify-items: center;
 }
 @media (width > 63.99875rem) {
   .apartments__list {
@@ -446,6 +448,16 @@ html {
   .apartments__list {
     grid-template-columns: repeat(1, 1fr);
     justify-items: center;
+  }
+}
+.apartments__list_2 {
+  padding-top: 32px;
+  display: flex;
+  justify-content: space-evenly;
+}
+@media (width <= 63.99875rem) {
+  .apartments__list_2 {
+    flex-direction: column;
   }
 }
 .apartments__card {
@@ -489,6 +501,9 @@ html {
   gap: 8px;
 }
 .apartments__card-unit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #EEF2F5;
   border-radius: 16px;
   text-align: center;
@@ -561,6 +576,8 @@ html {
   }
 }
 .activities__glass {
+  text-decoration: none;
+  color: white;
   border-radius: 8px;
   backdrop-filter: blur(16px);
   background-color: rgba(255, 255, 255, 0.15);
@@ -568,6 +585,7 @@ html {
   display: flex;
   flex-direction: column;
   gap: 4px;
+  cursor: pointer;
 }
 .activities__card {
   display: flex;
@@ -588,6 +606,18 @@ html {
 }
 .activities__card-second {
   background-image: url("/bunker/images/act2.jpeg");
+}
+.activities__card-third {
+  background-image: url("/bunker/images/act3.jpg");
+}
+.activities__card-fourth {
+  background-image: url("/bunker/images/act4.webp");
+}
+.activities__card-fifth {
+  background-image: url("/bunker/images/act5.jpg");
+}
+.activities__card-sixth {
+  background-image: url("/bunker/images/act6.jpg");
 }
 .activities__card-title {
   font-weight: bold;
@@ -819,6 +849,55 @@ html {
 .footer__copyright {
   font-size: 14px;
   color: #777;
+}
+
+.slider {
+  position: relative;
+  overflow: hidden;
+  height: 300px;
+}
+
+.slider__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  transition: transform 0.4s ease;
+}
+
+.slider__item {
+  list-style: none;
+  min-width: 100%;
+}
+
+.apartments__card-photo {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Кнопки керування */
+.control_prev,
+.control_next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10; /* щоб не перекривався зображенням */
+  font-size: 24px;
+  line-height: 1;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 6px 10px;
+  text-decoration: none;
+  cursor: pointer;
+  user-select: none;
+}
+
+.control_prev {
+  left: 10px;
+}
+
+.control_next {
+  right: 10px;
 }
 
 /*# sourceMappingURL=main.css.map */
