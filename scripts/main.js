@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const sliders = document.querySelectorAll('.slider');
+    const carousel = document.getElementById('carousel');
+    carousel.innerHTML += carousel.innerHTML;
 
     sliders.forEach((slider) => {
         const list = slider.querySelector('.slider__list');

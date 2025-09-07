@@ -900,4 +900,31 @@ html {
   right: 10px;
 }
 
+.carousel {
+  width: 100vw;
+  overflow: hidden;
+  margin: 20px auto;
+}
+
+.carousel__container {
+  display: flex;
+  width: max-content;
+  animation: scroll 200s linear infinite;
+}
+
+.carousel__container img {
+  width: 600px;
+  height: 400px;
+  object-fit: cover;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
