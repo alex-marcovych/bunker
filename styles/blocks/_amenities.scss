@@ -50,7 +50,13 @@
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
 
     &-first{
-      background-image: url('/bunker/images/amen1.jpeg');
+      background-image: url('/bunker/images/amen1-1.jpeg');
+      background-position: 0 -130px;
+
+      @include mobile-above {
+        background-image: url('/bunker/images/amen1-1.jpeg');
+        background-position: 0 0;
+      }
     }
 
     &-second{
@@ -70,10 +76,10 @@
     }
 
     &-fourth{
-      background-image: url('/bunker/images/amen4.jpg');
+      background-image: url('/bunker/images/amen4-1.jpeg');
 
       @include mobile {
-        background-position: 0 -10px;
+        background-position: 0 -110px;
       }
     }
 

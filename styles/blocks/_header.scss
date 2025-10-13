@@ -10,28 +10,22 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: transparent;
   flex-grow: 1;
-
-  animation-name: scrolling-header;
-  animation-fill-mode: both;
-  animation-timeline: scroll();
-  animation-range: rem(100) rem(200);
-
-  @keyframes scrolling-header {
-    to {
-      backdrop-filter: blur(12px);
-      background-color: rgba(255, 255, 255, 0.15);
-    }
-  }
+  backdrop-filter: blur(12px);
+  background-color: rgba(255, 255, 255, 0.15);
 
   &__logo {
-    height: 64px;
-    width: 124px;
+    width: 200px;
     min-width: 124px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding-inline: 8px;
+    height: 24px;
 
-    @include mobile {
-
+    @include mobile-above {
+      width: 240px;
+      padding-inline: 8px;
+      height: 40px;
     }
   }
 
