@@ -1,7 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
     const sliders = document.querySelectorAll('.slider');
-    const carousel = document.getElementById('carousel');
-    carousel.innerHTML += carousel.innerHTML;
 
     sliders.forEach((slider) => {
         const list = slider.querySelector('.slider__list');
@@ -11,24 +9,32 @@ document.addEventListener('DOMContentLoaded', () => {
 
         let index = 0;
 
-        const render = () => {
-            list.style.transform = `translateX(-${index * 100}%)`;
-        };
+        function getSlideWidth() {
+            if (slides.length === 0) return 0;
+            return slides[0].offsetWidth;
+        }
 
-        const goNext = (e) => {
+        function render() {
+            const slideWidth = getSlideWidth();
+            list.style.transform = `translateX(-${index * slideWidth}px)`;
+        }
+
+        function goNext(e) {
             e?.preventDefault?.();
             index = (index + 1) % slides.length;
             render();
-        };
+        }
 
-        const goPrev = (e) => {
+        function goPrev(e) {
             e?.preventDefault?.();
             index = (index - 1 + slides.length) % slides.length;
             render();
-        };
+        }
 
         nextBtn.addEventListener('click', goNext);
         prevBtn.addEventListener('click', goPrev);
+
+        window.addEventListener('resize', render);
 
         render();
     });
