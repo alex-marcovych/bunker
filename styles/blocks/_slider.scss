@@ -4,6 +4,7 @@
   position: relative;
   overflow: hidden;
   height: 300px;
+  border-radius: 20px;
 }
 
 .slider__list {
@@ -43,3 +44,153 @@
 
 .control_prev { left: 10px; }
 .control_next { right: 10px; }
+
+.slider__first::after {
+  content: "Басейн з підігрівом";
+
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  z-index: 2;
+
+  background:#2D4C36;
+  color: #ffffff;
+
+  border-radius: 12px;
+  width: 148px;
+  height: 28px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.slider__second::after {
+  content: "Чан";
+
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  z-index: 2;
+
+  background:#2D4C36;
+  color: #ffffff;
+
+  border-radius: 12px;
+  width: 68px;
+  height: 28px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.slider__third::after {
+  content: "Дитячий майданчик";
+
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  z-index: 2;
+
+  background:#2D4C36;
+  color: #ffffff;
+
+  border-radius: 12px;
+  width: 152px;
+  height: 28px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.slider__fourth::after {
+  content: "Зона барбекю";
+
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  z-index: 2;
+
+  background:#2D4C36;
+  color: #ffffff;
+
+  border-radius: 12px;
+  width: 130px;
+  height: 28px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.slider__fifth::after {
+  content: "Соляна кімната";
+
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  z-index: 2;
+
+  background:#2D4C36;
+  color: #ffffff;
+
+  border-radius: 12px;
+  width: 120px;
+  height: 28px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.slider__sixth::after {
+  content: "Інше";
+
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  z-index: 2;
+
+  background:#2D4C36;
+  color: #ffffff;
+
+  border-radius: 12px;
+  width: 68px;
+  height: 28px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
